@@ -8,6 +8,8 @@ kops create cluster \
 --node-size t2.micro \
 --master-size t2.micro \
 --node-count 3 \
---node-security-groups sg-0cac0878726527557\
---master-security-groups sg-0cac0878726527557\
+--node-security-groups sg-0cac0878726527557 \
+--master-security-groups sg-0cac0878726527557 \
+--vpc vpc-ff588a85 \
+--subnets subnet-62d2075c,subnet-9fdf5dc3,subnet-cec549e0,subnet-cf3d46c0,subnet-d3366799,subnet-e829af8f \
 $NAME --yes
